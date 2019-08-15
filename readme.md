@@ -1,3 +1,21 @@
+**Forked from nwtnni/resume**
+
+To pull from public repo:
+```
+git remote add public https://github.com/nwtnni/resume.git
+git pull public master
+```
+
+You probably want to only pull specific files:
+```
+git fetch public
+git checkout resume.cls
+```
+
+whatever. im not sure if this even works.
+
+
+
 ## Basic Resume Template
 
 I wanted to write my own resume template in LaTeX, so here it is, along with some explanatory comments.
@@ -101,7 +119,7 @@ that generate the actual document.
     \fancyhf{}
     \chead{
         \begin{spacing}{0.75}
-            \huge{\@author} 
+            \huge{\@author}
         \end{spacing}
         \href{mailto:\@email}{\@email}
     }

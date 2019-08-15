@@ -1,6 +1,6 @@
 % resume.cls
 % Basic resume template
-% Newton Ni, cn279@cornell.edu 
+% Newton Ni, cn279@cornell.edu
 
 % Identification
 \NeedsTeXFormat{LaTeX2e}
@@ -51,7 +51,7 @@
     \fancyhf{}
     \chead{
         \begin{spacing}{0.75}
-            \huge{\@author} 
+            \huge{\@author}
         \end{spacing}
         \href{mailto:\@email}{\@email}
     }
@@ -66,6 +66,8 @@
 % Utility macros
 \def \@rule{\color{accent}\hrule}
 \def \@break{\vspace{.6\baselineskip}}
+\def \@smallbreak{\vspace{.1\baselineskip}}
+\def \@bigbreak{\vspace{1.5\baselineskip}}
 
 % Entry with title, date, and description
 % Usage: \entry{title}{description}{date}
@@ -79,13 +81,43 @@
     \end{spacing}
 }
 
+\newenvironment{entryleft}[1]{
+    \begin{minipage}[t]{0.73 \textwidth}
+        \begin{spacing}{0}
+            \textbf{#1}
+        \end{spacing}
+        % \hfill \break
+        % \begin{itemize}[label={}, itemsep=-0.7ex, topsep=0ex, leftmargin=*]
+    }{
+        % \end{itemize}
+        \@break
+        \end{minipage}
+        \hfill
+}
+
+\newenvironment{entryright}{
+        \begin{minipage}[t]{0.25 \textwidth}
+        \begin{flushright}
+        \@smallbreak
+        % \begin{itemize}[label={}, itemsep=-0.1ex, topsep=0.2ex, leftmargin=*]
+        % \small
+    }{
+        % \end{itemize}
+        \end{flushright}
+        \end{minipage}
+}
+
+\newcommand{\entryitem}[2]{
+    \begin{spacing}{0} #1 \\ #2 \\ \end{spacing} \@bigbreak
+}
+
 % Itemized descriptions
 \renewenvironment{description}{
-    \begin{itemize}[label={-}, itemsep=0.1ex, topsep=0.2ex]
-    \small
-}{
-    \end{itemize}
-    \@break
+        \begin{itemize}[label={-}, itemsep=0.1ex, topsep=0.2ex]
+        \small
+    }{
+        \end{itemize}
+        \@break
 }
 
 % Automate setting up similar environments
@@ -94,6 +126,7 @@
         \centering
         \textbf{\large{\titlecap{#1}}}
         \@break
+        \\
     }{
         \@rule
         \@break
