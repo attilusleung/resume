@@ -28,6 +28,7 @@
 
 % Minimum requirements for .cls file
 \renewcommand{\normalsize}{\fontsize{11pt}{11pt}\selectfont}
+% \setlength{\textwidth}{6.5in}
 \setlength{\textwidth}{6.5in}
 \setlength{\textheight}{9in}
 \pagenumbering{gobble}
@@ -71,23 +72,57 @@
 
 % Entry with title, date, and description
 % Usage: \entry{title}{description}{date}
-\newcommand{\entry}[3]{
-    \begin{spacing}{0}
-        \ifthenelse{\equal{#2}{}}{
-            \textbf{#1} \hfill
-        }{
-            \textbf{#1} - #2 \hfill #3
-        }
-    \end{spacing}
-}
+% \newcommand{\entry}[3]{
+%     \begin{spacing}{0}
+%         \ifthenelse{\equal{#2}{}}{
+%             \textbf{#1} \hfill
+%         }{
+%             \textbf{#1} - #2 \hfill #3
+%         }
+%     \@break
+%     \end{spacing}
+% }
 
-\newenvironment{entryleft}[2]{
-        \begin{minipage}[t]{0.73 \textwidth}
+\newenvironment{entry}[3]{
+        \begin{minipage}[t]{0.95 \textwidth}
         \begin{spacing}{0}
             \ifthenelse{\equal{#2}{}}{
                 \textbf{#1} \hfill
             }{
                 \textbf{#1} - #2
+            }
+            \ifthenelse{\equal{#3}{}}{
+            }{
+                \hfill \break
+                #3
+            }
+            % \ifthenelse{\equal{#2}{}}{
+            % %     \textbf{#1}
+            % }{
+            % %     \textbf{#1} - #2
+            % }
+        \end{spacing}
+        % \hfill \break
+        % \begin{itemize}[label={}, itemsep=-0.7ex, topsep=0ex, leftmargin=*]
+    }{
+        % \end{itemize}
+        \@bigbreak
+        \end{minipage}
+        \hfill
+}
+
+\newenvironment{entryleft}[3]{
+        \begin{minipage}[t]{0.73 \textwidth}
+        \begin{spacing}{0.2}
+            \ifthenelse{\equal{#2}{}}{
+                \textbf{#1} \hfill
+            }{
+                \textbf{#1} - #2
+            }
+            \ifthenelse{\equal{#3}{}}{
+            }{
+                \hfill \break
+                #3
             }
             % \ifthenelse{\equal{#2}{}}{
             % %     \textbf{#1}
@@ -130,7 +165,7 @@
 
 % Itemized descriptions
 \renewenvironment{description}{
-        \begin{itemize}[label={-}, itemsep=0.1ex, topsep=0.2ex]
+        \begin{itemize}[label={-}, itemsep=0.00ex, topsep=0.0ex]
         \small
     }{
         \end{itemize}

@@ -5,28 +5,33 @@
 \setsite{github.com/attilusleung}
 
 \usepackage{hyperref}
+\usepackage{scrextend}
 
 \begin{document}
 \begin{education}
-    \begin{entryleft}{Cornell University}{College of Arts and Sciences}
+    \begin{entryleft}{Cornell University}{College of Arts and Sciences}{}
+        % August 2018 --- May 2022
         \begin{description}
             \item B.A. in Computer Science --- 4.0 GPA
             \item Dean's List for College of Arts and Science (all semesters)
-            % \item Coursework ---
-            %     Compilers,
-            %     Programming Languages,
-            %     Functional Programming,
-            %     Algorithms,
-
-            %     Computer Systems,
-            %     Computer Graphics,
-            %     Distributed Systems
+            \begin{spacing}{0}
+            \item Coursework:
+            \end{spacing}
+                    \begin{addmargin}[1em]{0em}
+                        Algorithms,
+                        Honors Discrete Structures,\\
+                        Object-Oriented Programming and Data Structures,\\
+                        Functional Programming,
+                        Computer Graphics,
+                        Backend Development
+                    \end{addmargin}
         \end{description}
     \end{entryleft}
     \begin{entryright}
         \entryitem{Aug 2018 --- May 2022}{(Expected)}
     \end{entryright}
-    % \entry{Diocesan Boys' School}{International Baccalaureate Diploma Program}{May 2018}
+    % \entry{Diocesan Boys' School}{International Baccalaureate Diploma
+    % Program}{May 2018}
     % \begin{description}
     %     \item Graduated with Bilingual IB Diploma
     %     \item Courses
@@ -35,69 +40,107 @@
 \end{education}
 
 \begin{experience}
-    \begin{entryleft}{Cornell University Autonomous Underwater Vehicle}{}
+    \begin{entry}{Cornell University Autonomous Underwater
+        Vehicle}{}{
+        Software Co-Lead [Aug 2019 --- Current] \hfill \break Software
+    Member [Oct 2018 --- Aug 2019]}
+        % \hfill \break
+        % \textbf{Software Co-Lead} Aug 2019 --- Current \hfill
         \begin{description}
-            \item Created vision modules for the underwater vehicle to identify mission elements using computer vision algorithms
+            \item Created vision modules for the underwater vehicle to identify
+                mission elements using computer vision
             \item Developed a new automated testing software for vision modules
-            \item Programmed autonomous missions for the vehicle using a custom mission system
-            \item Finalist in Association of Unmanned Vehicle System International's 2019 RoboSub competition, where the vehicles autonomously completed gate navigation, pinger tracking and buoy ramming tasks
+            \item Lead software meetings twice a week to assess and follow-up on
+                team progress
+            \item Programmed autonomous missions for the vehicle using a custom
+                mission system, including gate navigation, pinger tracking, buoy
+                ramming and torpedoes tasks
+            \item Finalist in Association of Unmanned Vehicle System
+                International's 2019 RoboSub competition
         \end{description}
-    \end{entryleft}
-    \begin{entryright}
-        \entryitem{Software Co-Lead}{Aug 2019 --- Current}
-        \entryitem{Software Member}{Oct 2018 --- Aug 2019}
-    \end{entryright}
+    \end{entry}
+    % \begin{entryright}
+    %     \entryitem{Software Co-Lead}{Aug 2019 --- Current}
+    %     \entryitem{Software Member}{Oct 2018 --- Aug 2019}
+    % \end{entryright}
 
-    \begin{entryleft}{Diocesan Boys' School Design and Technology Engineering Team}{}
+    \begin{entry}{Diocesan Boys' School Design and Technology Engineering
+        Team}{}{Programming Lead [Dec 2016 --- May 2018]}
         \begin{description}
-            \item Lead the software component of the engineering projects on a team of 10 students
-            \item Designed an automated liquid cooling system for a self-cooling smart glass that can be controlled with an android application
-            \item Placed first in Hong Kong University of Science and Technology's Paper Tower Challenge
+            \item Lead the software component of the engineering projects on a
+                team of 10 students
+            \item Designed an automated liquid cooling system for a self-cooling
+                smart glass controllable using an app
+            \item Placed first in Hong Kong University of Science and
+                Technology's Paper Tower Challenge
         \end{description}
-    \end{entryleft}
-    \begin{entryright}
-        \entryitem{Programming Lead}{Dec 2016 --- May 2018}
-    \end{entryright}
+    \end{entry}
+    % \begin{entryright}
+    %     \entryitem{Programming Lead}{Dec 2016 --- May 2018}
+    % \end{entryright}
 
-    \begin{entryleft}{Cornell Computing and Information Science: \\ Introduction to Computing Using Python}{}
+    \begin{entry}{Cornell Computing and Information Science: Introduction
+        to Computing Using Python}{}{Consultant [Aug 2019 --- Current]}
         \begin{description}
             \item Conducted two labs per week and hold consultant office hours
-            \item Grade assignments, preliminary exams and finals
+            \item Graded assignments, preliminary exams and finals
         \end{description}
-    \end{entryleft}
-    \begin{entryright}
-        \entryitem{Consultant}{August 2019 --- Current}
-    \end{entryright}
+    \end{entry}
+    % \begin{entryright}
+    %     \entryitem{Consultant}{August 2019 --- Current}
+    % \end{entryright}
 \end{experience}
 
 \begin{projects}
-    \begin{entryleft}{Cornell Creatives}{}
+    \begin{entry}{Cornell Creatives}{}{Backend Application [Sep 2018 --- Dec
+        2018]}
         \begin{description}
-            \item Designed an application to connect freelancers with potential customers
+            \item Designed an application to connect freelancers with potential
+                customers
             \item Wrote a RESTful API for an iOS application using flask
-            \item Setup a virtual environment for the application and dockerized it
+            \item Setup a virtual environment for the application and dockerized
+                it
         \end{description}
-    \end{entryleft}
-    \begin{entryright}
-        \entryitem{Backend Application}{Sep 2018 --- Dec 2018}
-    \end{entryright}
+    \end{entry}
+    % \begin{entryright}
+    %     \entryitem{Backend Application}{Sep 2018 --- Dec 2018}
+    % \end{entryright}
 
-    \begin{entryleft}{An Analysis of the Trajectory of a Bouncing ball on a Sinusoidally \\Vibrating Table}{}
+    % \begin{entry}{An Analysis of the Trajectory of a Bouncing ball on a
+    %     Sinusoidally Vibrating Table}{}{Research Paper \qquad \qquad Sep 2017 --- Mar
+    % 2018}
+    %     \begin{description}
+    %         \item Modelled the trajectory of a bouncing ball on a sinusoidally
+    %             vibrating table with a computer simulation
+    %         \item Analyzed how small changes in the initial height of the ball
+    %             affected its trajectory
+    %     \end{description}
+    % \end{entry}
+
+    \begin{entry}{CourseNotifier}{}{Python Script [Sep 2019 --- August 2019]}
         \begin{description}
-            \item Modelled the trajectory of a bouncing ball on a sinusoidally vibrating table with a computer simulation
-            \item Analyzed how small changes in the initial height of the ball affected its trajectory
+            \item Created a script that scrapes the Cornell Class Roster
+                using an html parser to check for class openings
+            \item Integrated the Twilio api to instantly send sms messages to
+                the user the moment a class becomes open
+            \item Made the script customizable using ini configuration files and
+                added an error logger
+            \item Daemonized the script using systemd and ran it on a headless
+                raspberry pi
         \end{description}
-    \end{entryleft}
-    \begin{entryright}
-        \entryitem{Research Paper}{Sep 2017 --- Mar 2018}
-    \end{entryright}
+    \end{entry}
+
+    % \begin{entryright}
+    %     \entryitem{Research Paper}{Sep 2017 --- Mar 2018}
+    % \end{entryright}
 \end{projects}
 
 % \begin{skills}
     \begin{smalldescription}
-        \item \textbf{Programming Languages:} python, java, C\#
-        \item \textbf{Languages: } Mandarin, Cantonese, English
-        \item \textbf{Software:} OpenCV, git, latex, bash, unix, vim, docker, flask
+        \item \textbf{Programming Languages:} python, java, C\#, OCaml, C++
+        \item \textbf{Languages: } Fluent in English and Mandarin and Cantonese
+        \item \textbf{Software:} OpenCV, git, \LaTeX, bash, unix, vim, docker,
+            flask
     \end{smalldescription}
 % \end{skills}
 \end{document}
