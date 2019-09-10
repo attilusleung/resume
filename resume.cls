@@ -56,7 +56,7 @@
         \href{mailto:\@email}{\@email}
     }
     \lhead{\@phone}
-    \rhead{\href{https://nwtnni.github.io}{\@site}}
+    \rhead{\href{https://\@site}{\@site}}
     \renewcommand{\headrulewidth}{1pt}
     \renewcommand{\headrule}{\hbox to\headwidth{\color{accent}\leaders\hrule width \headrulewidth\hfill}}
     \renewcommand{\footrulewidth}{0pt}
@@ -67,7 +67,7 @@
 \def \@rule{\color{accent}\hrule}
 \def \@break{\vspace{.6\baselineskip}}
 \def \@smallbreak{\vspace{.1\baselineskip}}
-\def \@bigbreak{\vspace{1.5\baselineskip}}
+\def \@bigbreak{\vspace{.3\baselineskip}}
 
 % Entry with title, date, and description
 % Usage: \entry{title}{description}{date}
@@ -81,16 +81,25 @@
     \end{spacing}
 }
 
-\newenvironment{entryleft}[1]{
-    \begin{minipage}[t]{0.73 \textwidth}
+\newenvironment{entryleft}[2]{
+        \begin{minipage}[t]{0.73 \textwidth}
         \begin{spacing}{0}
-            \textbf{#1}
+            \ifthenelse{\equal{#2}{}}{
+                \textbf{#1} \hfill
+            }{
+                \textbf{#1} - #2
+            }
+            % \ifthenelse{\equal{#2}{}}{
+            % %     \textbf{#1}
+            % }{
+            % %     \textbf{#1} - #2
+            % }
         \end{spacing}
         % \hfill \break
         % \begin{itemize}[label={}, itemsep=-0.7ex, topsep=0ex, leftmargin=*]
     }{
         % \end{itemize}
-        \@break
+        \@bigbreak
         \end{minipage}
         \hfill
 }
@@ -107,8 +116,16 @@
         \end{minipage}
 }
 
+\newenvironment{smalldescription}{
+        \begin{itemize}[label={}, itemsep=0.1ex, topsep=0.2ex, leftmargin=*]
+        \small
+    }{
+        \end{itemize}
+        \@break
+}
+
 \newcommand{\entryitem}[2]{
-    \begin{spacing}{0} #1 \\ #2 \\ \end{spacing} \@bigbreak
+    \begin{spacing}{1} #1 \\ #2 \\ \end{spacing} \@bigbreak
 }
 
 % Itemized descriptions
@@ -123,8 +140,12 @@
 % Automate setting up similar environments
 \newcommand{\@makeenvironment}[1] {
     \newenvironment{#1}{
-        \centering
-        \textbf{\large{\titlecap{#1}}}
+        % not center?
+        % \centering
+        \raggedright
+        % \begin{spacing}{0}
+            \textbf{\large{\titlecap{#1}}}
+        % \end{spacing}
         \@break
         \\
     }{

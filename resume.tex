@@ -1,6 +1,6 @@
 \documentclass{resume}
 \setauthor{Yuet Ming Leung}
-\setphone{607--379--4576}
+\setphone{+1 (607) 379--4576}
 \setemail{yl787@cornell.edu}
 \setsite{github.com/attilusleung}
 
@@ -8,36 +8,39 @@
 
 \begin{document}
 \begin{education}
-    \entry{Cornell University}{College of Arts and Sciences}{Expected May 2022}
-    \begin{description}
-        \item Candidate for B.A. in Computer Science --- 4.0 GPA
-        % \item Coursework ---
-        %     Compilers,
-        %     Programming Languages,
-        %     Functional Programming,
-        %     Algorithms,
+    \begin{entryleft}{Cornell University}{College of Arts and Sciences}
+        \begin{description}
+            \item B.A. in Computer Science --- 4.0 GPA
+            \item Dean's List for College of Arts and Science (all semesters)
+            % \item Coursework ---
+            %     Compilers,
+            %     Programming Languages,
+            %     Functional Programming,
+            %     Algorithms,
 
-        %     Computer Systems,
-        %     Computer Graphics,
-        %     Distributed Systems
-    \end{description}
-    \entry{Diocesan Boys' School}{International Baccalaureate Diploma Program}{May 2018}
-    \begin{description}
-        \item Graduated with Billingual IB Diploma
-        \item Courses
-            \subitem Higher Level: Physics, Chemistry, Mathematics
-
-            \subitem Standard Level: Economics, Chinese Literature, English Language and Literature
-    \end{description}
+            %     Computer Systems,
+            %     Computer Graphics,
+            %     Distributed Systems
+        \end{description}
+    \end{entryleft}
+    \begin{entryright}
+        \entryitem{Aug 2018 --- May 2022}{(Expected)}
+    \end{entryright}
+    % \entry{Diocesan Boys' School}{International Baccalaureate Diploma Program}{May 2018}
+    % \begin{description}
+    %     \item Graduated with Bilingual IB Diploma
+    %     \item Courses
+    %         \subitem Higher Level: Physics, Chemistry, Mathematics
+    % \end{description}
 \end{education}
 
 \begin{experience}
-    \begin{entryleft}{Cornell University Autonomous Underwater Vehicle}
+    \begin{entryleft}{Cornell University Autonomous Underwater Vehicle}{}
         \begin{description}
-            \item Created vision modules for the underwater vehicle using OpenCV
+            \item Created vision modules for the underwater vehicle to identify mission elements using computer vision algorithms
+            \item Developed a new automated testing software for vision modules
             \item Programmed autonomous missions for the vehicle using a custom mission system
-            \item Created a new automated testing software for vision modules
-            \item Finalist in AUVSI's 2019 RoboSub competition, where the vehicles autonously completed gate navigation, pinger tracking and buoy ramming tasks
+            \item Finalist in Association of Unmanned Vehicle System International's 2019 RoboSub competition, where the vehicles autonomously completed gate navigation, pinger tracking and buoy ramming tasks
         \end{description}
     \end{entryleft}
     \begin{entryright}
@@ -45,21 +48,20 @@
         \entryitem{Software Member}{Oct 2018 --- Aug 2019}
     \end{entryright}
 
-    \begin{entryleft}{Diocesan Boys' School Design and Technology Engineering Team}
+    \begin{entryleft}{Diocesan Boys' School Design and Technology Engineering Team}{}
         \begin{description}
-            \item Collaborated with a team of around 10 people
-            \item Oversaw the software components of engineering projects
-            \item Designed an automated liquid cooling system for a self cooling smart glass
-            \item First place in HKUST's Paper Tower Challenge
+            \item Lead the software component of the engineering projects on a team of 10 students
+            \item Designed an automated liquid cooling system for a self-cooling smart glass that can be controlled with an android application
+            \item Placed first in Hong Kong University of Science and Technology's Paper Tower Challenge
         \end{description}
     \end{entryleft}
     \begin{entryright}
         \entryitem{Programming Lead}{Dec 2016 --- May 2018}
     \end{entryright}
 
-    \begin{entryleft}{Cornell Computing and Information Science: \\ Introduction to Computing Using Python}
+    \begin{entryleft}{Cornell Computing and Information Science: \\ Introduction to Computing Using Python}{}
         \begin{description}
-            \item Teach two labs per week and hold additional consultant office hours
+            \item Conducted two labs per week and hold consultant office hours
             \item Grade assignments, preliminary exams and finals
         \end{description}
     \end{entryleft}
@@ -69,32 +71,33 @@
 \end{experience}
 
 \begin{projects}
-    \entry{tigerc}{\href{https://github.com/nwtnni/tigerc}{tiger programming language compiler}}{jun 2018 --- aug 2018}
-    \begin{description}
-        \item compiles high-level tiger language down to x86--64 assembly using rust
-        \item performs type-checking, ir translation, naive register allocation, etc.
-        \item applies macro-based metaprogramming for test boilerplate generation
-    \end{description}
+    \begin{entryleft}{Cornell Creatives}{}
+        \begin{description}
+            \item Designed an application to connect freelancers with potential customers
+            \item Wrote a RESTful API for an iOS application using flask
+            \item Setup a virtual environment for the application and dockerized it
+        \end{description}
+    \end{entryleft}
+    \begin{entryright}
+        \entryitem{Backend Application}{Sep 2018 --- Dec 2018}
+    \end{entryright}
 
-    \entry{paxos}{\href{https://github.com/nwtnni/paxos}{paxos distributed consensus protocol}}{nov 2018 --- dec 2018}
-    \begin{description}
-        \item implements a generic replicated state machine library backed by multi-paxos
-        \item verifies correctness with a json dsl-based test harness and extensive logging
-        \item includes an example chatroom state machine with runnable server and client
-    \end{description}
-
-    \entry{gnocchi}{\href{https://github.com/nwtnni/gnocchi}{basic procedurally generated world}}{nov 2018 --- dec 2018}
-    \begin{description}
-        \item renders with fog of war and directional shading using javascript and webgl
-        \item supports multiple concurrent players using a client-server architecture
-        \item optimizes performance with chunking, bitflags, and occlusion culling
-    \end{description}
+    \begin{entryleft}{An Analysis of the Trajectory of a Bouncing ball on a Sinusoidally \\Vibrating Table}{}
+        \begin{description}
+            \item Modelled the trajectory of a bouncing ball on a sinusoidally vibrating table with a computer simulation
+            \item Analyzed how small changes in the initial height of the ball affected its trajectory
+        \end{description}
+    \end{entryleft}
+    \begin{entryright}
+        \entryitem{Research Paper}{Sep 2017 --- Mar 2018}
+    \end{entryright}
 \end{projects}
 
-\begin{skills}
-    \begin{description}
-        \item \textbf{languages:} python, java, C\#
-        \item \textbf{software:} OpenCV, git, latex, bash, unix, vim, docker, flask
-    \end{description}
-\end{skills}
+% \begin{skills}
+    \begin{smalldescription}
+        \item \textbf{Programming Languages:} python, java, C\#
+        \item \textbf{Languages: } Mandarin, Cantonese, English
+        \item \textbf{Software:} OpenCV, git, latex, bash, unix, vim, docker, flask
+    \end{smalldescription}
+% \end{skills}
 \end{document}
