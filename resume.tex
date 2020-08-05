@@ -6,30 +6,51 @@
 
 \usepackage{hyperref}
 \usepackage{scrextend}
+\usepackage{multicol}
 
 \begin{document}
 \begin{education}
-    \begin{entryleft}{Cornell University}{College of Arts and Sciences}{}
+    % \begin{spacing}{0.2}
+    \begin{entryleft}{Cornell University}{College of Arts and
+        Sciences}{Aug 2018 -- May 2022}
+        % \textbf{Cornell University} -- College of Arts and
+        % Sciences
+
+    % \begin{entryleft}{Cornell University}{College of Arts and Sciences}{}
+    % \begin{rightcolumn}
+    %     \entryitem{Aug 2018 --- May 2022}{(Expected)}
+    % \end{rightcolumn}
         % August 2018 --- May 2022
         \begin{description}
             \item B.A. in Computer Science --- 4.0 GPA
-            \item Dean's List for College of Arts and Science (all semesters)
-            \begin{spacing}{0}
-            \item Coursework:
-            \end{spacing}
-                    \begin{addmargin}[1em]{0em}
-                        Introduction to Algorithms,
-                        Honors Discrete Structures,\\
-                        Object-Oriented Programming and Data Structures,\\
-                        Functional Programming,
-                        Computer Graphics,
-                        Backend Development
-                    \end{addmargin}
+            \item Dean's List for College of Arts and Science
+            % TODO
+            \item Relevant Coursework: \\ \vspace{1pt} 
+                Algorithms, Honors Discrete Structures, Object-Oriented
+                Programming and Data Structures, \\
+                Functional Programming, Backend Development,
+                Computer Game Architecture, Programming Languages, \\
+                Computer Systems
         \end{description}
     \end{entryleft}
-    \begin{entryright}
-        \entryitem{Aug 2018 --- May 2022}{(Expected)}
-    \end{entryright}
+            % Relevant Coursework:
+            % \end{spacing}
+            % \begin{multicols}{3}
+            %     \begin{smalldescription}
+            %         % \begin{addmargin}[1em]{0em}
+            %         \item Introduction to Algorithm,
+            %         \item Honors Discrete Structures
+            %         \item Formal Verification
+            %         \item Object-Oriented Programming and Data Structures,
+            %         \item Functional Programming,
+            %         \item Computer Graphics,
+            %         \item Backend Development,
+            %         \item Introduction to Computer Game Architecture,
+            %         \item Programming Languages and Logics,
+            %         \item \phantom{}
+            %     \end{smalldescription}
+            % \end{multicols}
+                    % \end{addmargin}
     % \entry{Diocesan Boys' School}{International Baccalaureate Diploma
     % Program}{May 2018}
     % \begin{description}
@@ -40,10 +61,19 @@
 \end{education}
 
 \begin{experience}
-    \begin{entry}{Cornell University Autonomous Underwater
-        Vehicle}{}{
-        Software Co-Lead [Aug 2019 --- Current] \hfill \break Software
-    Member [Oct 2018 --- Aug 2019]}
+    \begin{entry}{Software Engineer Intern}{Facebook}{Jun 2020 --- Aug 2020}
+        \begin{description}
+            \item Worked on a failure injection tool for chaos testing using
+                python
+            \item Created an automated script that detects broken or consistently
+                failing tests
+            \item Developed a tool that diagnoses the reason for a test failure
+                and notifies users with possible fixes
+        \end{description}
+    \end{entry}
+
+    \begin{entry}{Software Co-Lead}{Cornell University Autonomous Underwater
+        Vehicle}{Oct 2018 --- Current}
         % \hfill \break
         % \textbf{Software Co-Lead} Aug 2019 --- Current \hfill
         \begin{description}
@@ -59,30 +89,38 @@
                 International's 2019 RoboSub competition
         \end{description}
     \end{entry}
+
+    % \begin{entryright}
+    %     \entryitem{Programming Lead}{Dec 2016 --- May 2018}
+    % \end{entryright}
     % \begin{entryright}
     %     \entryitem{Software Co-Lead}{Aug 2019 --- Current}
     %     \entryitem{Software Member}{Oct 2018 --- Aug 2019}
     % \end{entryright}
 
-    \begin{entry}{Diocesan Boys' School Design and Technology Engineering
-        Team}{}{Programming Lead [Dec 2016 --- May 2018]}
-        \begin{description}
-            \item Lead the software component of the engineering projects on a
-                team of 10 students
-            \item Designed an automated liquid cooling system for a self-cooling
-                smart glass controllable using an app
-            \item Placed first in Hong Kong University of Science and
-                Technology's Paper Tower Challenge
-        \end{description}
-    \end{entry}
+    % \begin{entry}{Diocesan Boys' School Design and Technology Engineering
+    %     Team}{}{Programming Lead [Dec 2016 --- May 2018]}
+    %     \begin{description}
+    %         \item Lead the software component of the engineering projects on a
+    %             team of 10 students
+    %         \item Designed an automated liquid cooling system for a self-cooling
+    %             smart glass controllable using an app
+    %         \item Placed first in Hong Kong University of Science and
+    %             Technology's Paper Tower Challenge
+    %     \end{description}
+    % \end{entry}
     % \begin{entryright}
     %     \entryitem{Programming Lead}{Dec 2016 --- May 2018}
     % \end{entryright}
 
-    \begin{entry}{Cornell Computing and Information Science: Introduction
-        to Computing Using Python}{}{Consultant [Aug 2019 --- Current]}
+    \begin{entry}{Teaching Assistant}{Cornell Computing and Information Science}
+        {Aug 2019 --- Current}
         \begin{description}
-            \item Conducted two labs per week and hold consultant office hours
+            \item Taught Introduction to Computing in Python, with a focus
+                on basic programming in python
+            \item Taught Honors Discrete Structures, with a focus on
+                discrete mathematics proofs for computer science.
+            \item Conducted two labs per week and held office hours
             \item Graded assignments, preliminary exams and finals
         \end{description}
     \end{entry}
@@ -92,14 +130,14 @@
 \end{experience}
 
 \begin{projects}
-    \begin{entry}{Cornell Creatives}{}{Backend Application [Sep 2018 --- Dec
-        2018]}
+    \begin{entry}{Night Bite}{Developer}{Feb 2020 --- May 2020}
         \begin{description}
-            \item Designed an application to connect freelancers with potential
-                customers
-            \item Wrote a RESTful API for an iOS application using flask
-            \item Setup a virtual environment for the application and dockerized
-                it
+            \item Worked on a single player three-quaters action game with a
+                team of 8 programmers and designers
+            \item Built a game engine on top of libgdx in Java and implemented
+                controllers for sprites and player input
+            \item Designed a prediction algorithm for enemy projectile
+                targeting
         \end{description}
     \end{entry}
     % \begin{entryright}
@@ -117,7 +155,7 @@
     %     \end{description}
     % \end{entry}
 
-    \begin{entry}{CourseNotifier}{}{Python Script [Aug 2019 --- Sep 2019]}
+    \begin{entry}{CourseNotifier}{}{Aug 2019 --- Sep 2019}
         \begin{description}
             \item Created a script that scrapes the Cornell Class Roster
                 using an html parser to check for class openings
@@ -137,8 +175,9 @@
 
 % \begin{skills}
     \begin{smalldescription}
-        \item \textbf{Programming Languages:} python, java, C\#, OCaml, C++
-        \item \textbf{Languages: } Fluent in English and Mandarin and Cantonese
+        \item \textbf{Programming Languages:} Python, Java, C\#, OCaml, C++,
+            Rust
+        \item \textbf{Languages: } Fluent in English, Mandarin and Cantonese
         \item \textbf{Software:} OpenCV, git, \LaTeX, bash, unix, vim, docker,
             flask
     \end{smalldescription}
