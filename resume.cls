@@ -83,8 +83,18 @@
 %     \end{spacing}
 % }
 
+
+\newenvironment{rightcolumn}{
+    \begin{flushright}
+        \begin{parbox}[t]{0.1 \textwidth}
+}{
+        \end{parbox}
+    \end{flushright}
+}
+
+
 \newenvironment{entry}[3]{
-        \begin{minipage}[t]{0.95 \textwidth}
+        % \begin{minipage}[t]{0.95 \textwidth}
         \begin{spacing}{0}
             \ifthenelse{\equal{#2}{}}{
                 \textbf{#1} \hfill
@@ -93,8 +103,8 @@
             }
             \ifthenelse{\equal{#3}{}}{
             }{
-                \hfill \break
-                #3
+                % \hfill \break
+                \hfill #3
             }
             % \ifthenelse{\equal{#2}{}}{
             % %     \textbf{#1}
@@ -106,13 +116,14 @@
         % \begin{itemize}[label={}, itemsep=-0.7ex, topsep=0ex, leftmargin=*]
     }{
         % \end{itemize}
-        \@bigbreak
-        \end{minipage}
-        \hfill
+        % \@bigbreak
+        \@break
+        % \end{minipage}
+        % \hfill
 }
 
 \newenvironment{entryleft}[3]{
-        \begin{minipage}[t]{0.73 \textwidth}
+        % \begin{minipage}[t]{0.73 \textwidth}
         \begin{spacing}{0.2}
             \ifthenelse{\equal{#2}{}}{
                 \textbf{#1} \hfill
@@ -121,8 +132,8 @@
             }
             \ifthenelse{\equal{#3}{}}{
             }{
-                \hfill \break
-                #3
+                % \hfill \break
+                \hfill #3
             }
             % \ifthenelse{\equal{#2}{}}{
             % %     \textbf{#1}
@@ -134,13 +145,14 @@
         % \begin{itemize}[label={}, itemsep=-0.7ex, topsep=0ex, leftmargin=*]
     }{
         % \end{itemize}
-        \@bigbreak
-        \end{minipage}
+        % \@bigbreak
+        % \end{minipage}
         \hfill
 }
 
 \newenvironment{entryright}{
-        \begin{minipage}[t]{0.25 \textwidth}
+        % \begin{minipage}[t]{0.25 \textwidth}
+        \makebox{0.25 \textwidth}[r]
         \begin{flushright}
         \@smallbreak
         % \begin{itemize}[label={}, itemsep=-0.1ex, topsep=0.2ex, leftmargin=*]
@@ -165,7 +177,7 @@
 
 % Itemized descriptions
 \renewenvironment{description}{
-        \begin{itemize}[label={-}, itemsep=0.00ex, topsep=0.0ex]
+        \begin{itemize}[label={-}, itemsep=0.02ex, topsep=0.05ex]
         \small
     }{
         \end{itemize}
