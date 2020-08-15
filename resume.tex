@@ -44,7 +44,7 @@
             %         \item Object-Oriented Programming and Data Structures,
             %         \item Functional Programming,
             %         \item Computer Graphics,
-            %         \item Backend Development,
+            %         \itemBackend Development,
             %         \item Introduction to Computer Game Architecture,
             %         \item Programming Languages and Logics,
             %         \item \phantom{}
@@ -63,14 +63,16 @@
 \begin{experience}
     \begin{entry}{Software Engineer Intern}{Facebook}{Jun 2020 --- Aug 2020}
         \begin{description}
-            \item Worked on a failure injection tool for chaos testing using
-                python
-            \item Implemented user error logging for failure injection to a SQL
-                database and improved error handling
-            \item Created an automated script that detects broken or consistently
-                failing tests
-            \item Developed a tool that diagnoses a test failure and notifies
-                users with possible fixes
+            \item Worked on chaos testing tool using python and injected
+                failures into core infrastructure and unix systems to test the
+                reliability of services
+            \item Improved error handling for tool to better identify reasons
+                for test failure, logging them to a MYSQL database to be queried
+                by the end user
+            \item Made a web user interface for users to view or query test
+                failure logs
+            \item Created an cron job that detects broken or consistently
+                failing tests and notifies users with possible fixes
         \end{description}
     \end{entry}
 
@@ -124,8 +126,8 @@
                 focus on basic programming in python
             \item Taught \emph{Honors Discrete Structures}, with a focus on
                 discrete mathematics proofs for computer science.
-            \item Conducted two labs per week and held office hours
-            \item Graded assignments, preliminary exams and finals
+            % \item Held office hours and graded assignments, preliminary exams
+            %     and finals
         \end{description}
     \end{entry}
     % \begin{entryright}
@@ -136,7 +138,7 @@
 \begin{projects}
     \begin{entry}{\href{https://github.com/oliver-leung/night-bite}{Night Bite}}{Video Game}{Feb 2020 --- May 2020}
         \begin{description}
-            \item Worked on a single player three-quaters action game with a
+            \item Worked on a single player three-quarters action game with a
                 team of 8 programmers and designers
             \item Built a game engine on top of libgdx in Java and implemented
                 controllers for sprites and player input
@@ -179,11 +181,11 @@
 
 % \begin{skills}
     \begin{smalldescription}
-        \item \textbf{Programming Languages:} Python, Java, C\#, OCaml, C++,
-            Rust
+        \item \textbf{Programming Languages:} Python, Java, Rust, C\#, OCaml,
+            C/C++, php, hack
         \item \textbf{Languages: } Fluent in English, Mandarin and Cantonese
         \item \textbf{Software:} OpenCV, git, \LaTeX, bash, unix, vim, docker,
-            flask
+            MYSQL, flask
     \end{smalldescription}
 % \end{skills}
 \end{document}
