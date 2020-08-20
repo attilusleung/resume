@@ -12,7 +12,7 @@
 \begin{education}
     % \begin{spacing}{0.2}
     \begin{entryleft}{Cornell University}{College of Arts and
-        Sciences}{Aug 2018 -- May 2022}
+        Sciences}{Aug 2018 -- May 2022 (Expected)}
         % \textbf{Cornell University} -- College of Arts and
         % Sciences
 
@@ -22,7 +22,7 @@
     % \end{rightcolumn}
         % August 2018 --- May 2022
         \begin{description}
-            \item B.A. in Computer Science --- 4.0 GPA
+            \item Bachelor of Arts in Computer Science --- 4.0 GPA
             \item Dean's List for College of Arts and Science
             % TODO
             \item Relevant Coursework: \\ \vspace{1pt}
@@ -63,15 +63,15 @@
 \begin{experience}
     \begin{entry}{Software Engineer Intern}{Facebook}{Jun 2020 --- Aug 2020}
         \begin{description}
-            \item Worked on chaos testing tool using python and injected
-                failures into core infrastructure and unix systems to test the
-                reliability of services
-            \item Improved error handling for tool to better identify reasons
-                for test failure, logging them to a MYSQL database to be queried
-                by the end user
-            \item Made a web user interface for users to view or query test
-                failure logs
-            \item Created an cron job that detects broken or consistently
+            \item Improved failure injection tool using Python for core
+                infrastructure and unix systems to perform chaos tests to
+                guarantee reliability of services
+            \item Improved error handling for failure injection tool to better
+                identify reasons for test failure, logging them to a MYSQL
+                database to be queried by the end user with a web interface
+            \item Analyzed \textasciitilde 7000 rows of test failure data to find most common
+                test errors and possible mitigations
+            \item Created a cron job that detects broken or consistently
                 failing tests and notifies users with possible fixes
         \end{description}
     \end{entry}
@@ -81,16 +81,17 @@
         % \hfill \break
         % \textbf{Software Co-Lead} Aug 2019 --- Current \hfill
         \begin{description}
-            \item Created vision modules for the underwater vehicle to identify
-                mission elements using computer vision
+            \item Created robust vision modules for the underwater vehicle to
+                identify mission elements that adapts to different lighting
+                conditions by combining computer vision techniques including
+                thresholding, SIFT, and Hu Moments
             \item Programmed autonomous missions for the vehicle using a custom
                 mission system, including gate navigation, pinger tracking, buoy
                 ramming and torpedoes tasks
-            \item Developed a new automated testing software for vision modules
             \item Managed a custom server stack that hosts the team website,
                 wiki and CD/CI tools
-            \item Lead software meetings twice a week to assess and follow-up on
-                team progress
+            \item Lead a team of 10 people in software meetings twice a week to
+                assess and follow-up on team progress
             \item Finalist in Association of Unmanned Vehicle System
                 International's 2019 RoboSub competition
         \end{description}
@@ -165,7 +166,7 @@
         \begin{description}
             \item Created a script that scrapes the Cornell Class Roster
                 using an html parser to check for class openings
-            \item Integrated the Twilio api to instantly send sms messages to
+            \item Integrated the Twilio api to instantly send SMS messages to
                 the user the moment a class becomes open
             \item Made the script customizable using ini configuration files and
                 added an error logger
