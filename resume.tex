@@ -1,0 +1,204 @@
+\documentclass{resume}
+\setauthor{Yuet Ming Leung}
+\setphone{+1 (607) 379--4576}
+\setemail{attilusleung@gmail.com}
+\setsite{github.com/attilusleung}
+
+\usepackage{hyperref}
+\usepackage{scrextend}
+\usepackage{multicol}
+
+\begin{document}
+\begin{experience}
+    \begin{entry}{Software Engineer}{Jump Trading}{Aug 2022 --- Present}
+        \begin{description}
+            \item Worked on components of trading systems in both live and
+                simulation environments
+        \end{description}
+    \end{entry}
+    \begin{entry}{Software Engineer Intern}{Jump Trading}{Jun 2021 --- Aug 2021}
+        \begin{description}
+            \item Parallelized a python script that can be utilized by process
+                pools and distributed systems to achieve ~6x performance increase
+            \item Implemented a telemetry feature using a server/client
+                architecture to collect user and usage data in software
+        \end{description}
+    \end{entry}
+    \begin{entry}{Software Engineer Intern}{Facebook}{Jun 2020 --- Aug 2020}
+        \begin{description}
+            \item Improved failure injection tool using Python for core
+                infrastructure and unix systems to perform chaos tests to
+                guarantee reliability of services
+            \item Improved error handling for failure injection tool to better
+                identify reasons for test failure, logging them to a MYSQL
+                database to be queried by the end user with a web interface
+            % \item Analyzed \textasciitilde 7000 rows of test failure data to find most common
+            %     test errors and possible mitigations
+            % \item Created a cron job that detects broken or consistently
+            %     failing tests and notifies users with possible fixes
+        \end{description}
+    \end{entry}
+
+    \begin{entry}{Software Co-Lead}{Cornell University Autonomous Underwater
+        Vehicle}{Oct 2018 --- Current}
+        % \hfill \break
+        % \textbf{Software Co-Lead} Aug 2019 --- Current \hfill
+        \begin{description}
+            \item Created robust vision modules for the underwater vehicle to
+                identify mission elements that adapts to lighting conditions
+                using computer vision techniques including thresholding, SIFT,
+                and Hu Moments
+            \item Programmed autonomous missions for the vehicle using a custom
+                mission system, including gate navigation, pinger tracking, buoy
+                ramming and torpedoes tasks
+            % \item Managed a custom server stack that hosts the team website,
+                % wiki and CD/CI tools
+            \item Lead a team of 10 people in software meetings twice a week to
+                assess team progress
+            \item Finalist in Association of Unmanned Vehicle System
+                International's 2019 RoboSub competition
+        \end{description}
+    \end{entry}
+
+    % \begin{entryright}
+    %     \entryitem{Programming Lead}{Dec 2016 --- May 2018}
+    % \end{entryright}
+    % \begin{entryright}
+    %     \entryitem{Software Co-Lead}{Aug 2019 --- Current}
+    %     \entryitem{Software Member}{Oct 2018 --- Aug 2019}
+    % \end{entryright}
+
+    % \begin{entry}{Diocesan Boys' School Design and Technology Engineering
+    %     Team}{}{Programming Lead [Dec 2016 --- May 2018]}
+    %     \begin{description}
+    %         \item Lead the software component of the engineering projects on a
+    %             team of 10 students
+    %         \item Designed an automated liquid cooling system for a self-cooling
+    %             smart glass controllable using an app
+    %         \item Placed first in Hong Kong University of Science and
+    %             Technology's Paper Tower Challenge
+    %     \end{description}
+    % \end{entry}
+    % \begin{entryright}
+    %     \entryitem{Programming Lead}{Dec 2016 --- May 2018}
+    % \end{entryright}
+
+    \begin{entry}{Teaching Assistant}{Cornell Computing and Information Science}
+        {Aug 2019 --- Dec 2020}
+        \begin{description}
+            \item Taught \emph{Introduction to Computing in Python}, with a
+                focus on basic programming
+            \item Taught \emph{Honors Discrete Structures}, with a focus on
+                discrete mathematics proofs
+            % \item Held office hours and graded assignments, preliminary exams
+            %     and finals
+        \end{description}
+    \end{entry}
+    % \begin{entryright}
+    %     \entryitem{Consultant}{August 2019 --- Current}
+    % \end{entryright}
+\end{experience}
+
+\begin{education}
+    % \begin{spacing}{0.2}
+    \begin{entryleft}{Cornell University}{College of Arts and Sciences}{Aug 2018 -- May 2022}
+        % \textbf{Cornell University} -- College of Arts and
+        % Sciences
+
+    % \begin{entryleft}{Cornell University}{College of Arts and Sciences}{}
+    % \begin{rightcolumn}
+    %     \entryitem{Aug 2018 --- May 2022}{(Expected)}
+    % \end{rightcolumn}
+        % August 2018 --- May 2022
+        \begin{description}
+            \item Bachelor of Arts in Computer Science
+            \item Master of Engineering in Computer Science
+            % \item Dean's List for College of Arts and Science
+            % % TODO
+            \item Relevant Coursework: \\
+                % \begin{minipage}{0.65\textwidth}
+                \begin{spacing}{0.2}
+                % \begin{itemize}% [label={-}, itemsep=0ex, topsep=0ex]
+                % \begin{multicols}{2}
+                %     \item Introduction to Algorithms
+                %     \item Introduction to Compilers
+                %     \item Honors Discrete Structures
+                %     \item Advanced Systems
+                %     % \item System Security
+                %     \item Programming Languages
+                %     \item Computer Networks
+                %     % \item Computer Game Architecture
+                % \end{multicols}
+                % \end{itemize}
+                % \end{minipage}
+                Introduction to Algorithms, Honors Discrete Structures, \\
+                Introduction to Compilers, Advanced Systems, \\
+                Computer Vision,
+                % Functional Programming, Computer Game Architecture,
+                Programming Languages, %System Security,
+                % Formal Verification,
+                Computer Networks
+                \end{spacing}
+        \end{description}
+    \end{entryleft}
+    % \entry{Diocesan Boys' School}{International Baccalaureate Diploma
+    % Program}{May 2018}
+    % \begin{description}
+    %     \item Graduated with Bilingual IB Diploma
+    %     \item Courses
+    %         \subitem Higher Level: Physics, Chemistry, Mathematics
+    % \end{description}
+\end{education}
+
+\begin{projects}
+    \begin{entry}{\href{https://github.com/oliver-leung/night-bite}{Night Bite}}{Video Game}{Feb 2020 --- May 2020}
+        \begin{description}
+            \item Worked on a single player three-quarters action game with a
+                team of 8 programmers and designers
+            \item Built a game engine on top of libgdx in Java and implemented
+                controllers for sprites and player input
+            \item Designed a prediction algorithm for enemy AI projectile
+                targeting and pathfinding
+        \end{description}
+    \end{entry}
+    % \begin{entryright}
+    %     \entryitem{Backend Application}{Sep 2018 --- Dec 2018}
+    % \end{entryright}
+
+    % \begin{entry}{An Analysis of the Trajectory of a Bouncing ball on a
+    %     Sinusoidally Vibrating Table}{}{Research Paper \qquad \qquad Sep 2017 --- Mar
+    % 2018}
+    %     \begin{description}
+    %         \item Modelled the trajectory of a bouncing ball on a sinusoidally
+    %             vibrating table with a computer simulation
+    %         \item Analyzed how small changes in the initial height of the ball
+    %             affected its trajectory
+    %     \end{description}
+    % \end{entry}
+
+    % \begin{entry}{\href{https://github.com/attilusleung/CourseNotifier}{CourseNotifier}}{Python Script}{Aug 2019 --- Sep 2019}
+    %     \begin{description}
+    %         \item Created a script that scrapes the Cornell Class Roster
+    %             using an html parser to check for class openings
+    %         \item Integrated the Twilio api to instantly send SMS messages to
+    %             the user the moment a class becomes open
+    %         \item Made the script customizable using ini configuration files and
+    %             added an error logger
+    %         \item Daemonized the script using systemd and ran it on a headless
+    %             raspberry pi
+    %     \end{description}
+    % \end{entry}
+
+    % \begin{entryright}
+    %     \entryitem{Research Paper}{Sep 2017 --- Mar 2018}
+    % \end{entryright}
+\end{projects}
+
+% \begin{skills}
+    \begin{smalldescription}
+        \item \textbf{Programming Languages:} Python, C++, Rust, C, OCaml
+        \item \textbf{Languages:} Fluent in English, Mandarin and Cantonese
+        \item \textbf{Software:} polars, pandas, numpy, git, bazel, \LaTeX, OpenCV, bash, unix, arch linux, vim, docker, flask
+    \end{smalldescription}
+% \end{skills}
+\end{document}
