@@ -1,0 +1,9 @@
+{
+  "image": "mcr.microsoft.com/devcontainers/base:bookworm",
+  "features": {
+    "ghcr.io/michidk/devcontainers-features/typst:1": {},
+    "ghcr.io/devcontainers/features/sshd:1": {
+        "version": "latest"
+    }
+  }
+}
